@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+
+<html lang="pl"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Algorithmic Architect | Omnichannel Automation</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary": "#ffffff",
+                    "tertiary-fixed-dim": "#48d7f9",
+                    "surface-dim": "#d9dadc",
+                    "on-secondary-fixed-variant": "#34476a",
+                    "on-tertiary-fixed-variant": "#004e5d",
+                    "secondary-fixed-dim": "#b4c7f1",
+                    "inverse-primary": "#b2c5ff",
+                    "on-error": "#ffffff",
+                    "surface-container-highest": "#e1e2e4",
+                    "on-secondary-container": "#475a7e",
+                    "surface-container-high": "#e7e8ea",
+                    "on-primary-container": "#c4d2ff",
+                    "outline": "#737685",
+                    "on-background": "#191c1e",
+                    "surface-tint": "#0c56d0",
+                    "on-tertiary-container": "#76e2ff",
+                    "primary": "#003d9b",
+                    "primary-fixed-dim": "#b2c5ff",
+                    "tertiary": "#004b59",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-container": "#bfd2fd",
+                    "background": "#f8f9fb",
+                    "on-surface-variant": "#434654",
+                    "primary-fixed": "#dae2ff",
+                    "on-primary": "#ffffff",
+                    "outline-variant": "#c3c6d6",
+                    "on-primary-fixed-variant": "#0040a2",
+                    "surface-variant": "#e1e2e4",
+                    "primary-container": "#0052cc",
+                    "on-error-container": "#93000a",
+                    "inverse-surface": "#2e3132",
+                    "surface-container": "#edeef0",
+                    "tertiary-fixed": "#afecff",
+                    "inverse-on-surface": "#f0f1f3",
+                    "secondary-fixed": "#d7e2ff",
+                    "secondary": "#4c5e83",
+                    "on-surface": "#191c1e",
+                    "on-tertiary-fixed": "#001f27",
+                    "tertiary-container": "#006477",
+                    "on-primary-fixed": "#001848",
+                    "on-secondary-fixed": "#041b3c",
+                    "surface-container-low": "#f3f4f6",
+                    "on-tertiary": "#ffffff",
+                    "surface": "#f8f9fb",
+                    "surface-bright": "#f8f9fb",
+                    "error": "#ba1a1a",
+                    "error-container": "#ffdad6"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+        }
+        .data-flow-divider {
+            height: 2px;
+            background: linear-gradient(90deg, transparent 0%, #d7e2ff 50%, transparent 100%);
+        }
+    </style>
+</head>
+<body class="bg-background font-body text-on-surface selection:bg-secondary-container">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-md">
+<nav class="max-w-7xl mx-auto px-8 flex justify-between items-center h-20">
+<div class="text-2xl font-bold tracking-tighter text-blue-900" style="">NEXOTRADE</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-blue-700 font-bold border-b-2 border-blue-700 font-manrope text-sm tracking-tight transition-colors" href="#" style="">Services</a>
+<a class="text-slate-600 hover:text-blue-600 font-manrope text-sm font-medium tracking-tight transition-colors" href="#" style="">Automation</a>
+<a class="text-slate-600 hover:text-blue-600 font-manrope text-sm font-medium tracking-tight transition-colors" href="#" style="">Case Studies</a>
+<a class="text-slate-600 hover:text-blue-600 font-manrope text-sm font-medium tracking-tight transition-colors" href="#" style="">About Us</a>
+<a class="text-slate-600 hover:text-blue-600 font-manrope text-sm font-medium tracking-tight transition-colors" href="#" style="">Contact</a>
+</div>
+<button class="bg-gradient-to-br from-[#003d9b] to-[#0052cc] text-white px-6 py-2.5 rounded-xl font-bold text-sm transition-transform scale-95 active:opacity-80" style="">
+            Get Started
+        </button>
+</nav>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative overflow-hidden pt-24 pb-32">
+<div class="max-w-7xl mx-auto px-8 editorial-grid">
+<div class="col-span-12 lg:col-span-7 z-10">
+<span class="text-tertiary font-label text-sm font-bold tracking-widest uppercase mb-6 block" style="">E-COMMERCE EVOLUTION</span>
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter text-primary leading-[1.1] mb-8" style="">
+                    Skaluj swój e-commerce na rynkach globalnych dzięki pełnej automatyzacji
+                </h1>
+<p class="text-on-surface-variant text-lg md:text-xl leading-relaxed max-w-2xl mb-10" style="">
+                    Specjalizujemy się w kompleksowej sprzedaży online i automatyzacji procesów dla liderów e-commerce. Budujemy architekturę sukcesu w świecie omnichannel.
+                </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-gradient-to-br from-primary to-primary-container text-white px-8 py-4 rounded-xl font-bold shadow-lg hover:scale-105 transition-transform" style="">
+                        Rozpocznij współpracę
+                    </button>
+<button class="bg-surface-container-high text-on-surface px-8 py-4 rounded-xl font-bold hover:bg-surface-container-highest transition-colors" style="">
+                        Nasze rozwiązania
+                    </button>
+</div>
+</div>
+<div class="absolute right-0 top-0 w-1/2 h-full hidden lg:block opacity-20 lg:opacity-100">
+<div class="w-full h-full bg-surface-container-low rounded-bl-[10rem] overflow-hidden">
+<img alt="Professional vector map of the European Union e-commerce network" class="w-full h-full object-cover mix-blend-multiply opacity-80 w-full h-full object-contain" data-alt="Modern high-tech workspace with clean minimalist design, featuring multiple monitors displaying complex data visualizations and e-commerce growth charts in cool blue tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_R64ZAv6ZijdKKp3P0mdSW8Dv36xAaSHOVrDNt6KBbCXPaFE4l1muLYeOXPV23Am6VTo_QrwwFIH3BbGzWTkwNaqd3ltQU2nRlVb7QNua8oGIHeMJSwUTowH7wi7gC5-0ExWUbbW2F6XM_yzAU9X7X-jF_nQH9_A1YHZBeJ9stXpZcmwkShuJtQ1mhqjTZIM7nXGyaClibaoBQtBZTmjdIBADnT108EydHpSA--gJm4fe2uwGKTry1n--GCxoGuzg5RppQ8i-PG4" style=""/>
+</div>
+</div>
+</div>
+</section>
+<!-- Divider -->
+<div class="data-flow-divider mx-auto w-3/4"></div>
+<!-- About Us Section -->
+<section class="py-32 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col lg:flex-row gap-16 items-center">
+<div class="flex-1">
+<h2 class="font-headline text-4xl font-extrabold tracking-tight text-primary mb-6" style="">O nas</h2>
+<div class="space-y-6 text-on-surface-variant text-lg leading-relaxed">
+<p class="" style="">
+                            Jesteśmy architektami cyfrowego handlu. Nasza misja to przekształcanie lokalnych sklepów w globalnych graczy poprzez inteligentne algorytmy i strategiczne podejście do sprzedaży wielokanałowej.
+                        </p>
+<p class="" style="">
+                            Dzięki dynamicznemu wzrostowi i pasji do innowacji, dostarczamy rozwiązania, które nie tylko oszczędzają czas, ale realnie zwiększają rentowność biznesu na każdym etapie łańcucha dostaw.
+                        </p>
+</div>
+</div>
+<div class="flex-1 grid grid-cols-2 gap-4">
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0px_24px_48px_rgba(25,28,30,0.06)] hover:bg-primary-fixed transition-all group">
+<div class="text-primary font-headline text-4xl font-extrabold mb-2" style="">99%</div>
+<div class="text-on-surface-variant group-hover:text-primary transition-colors" style="">Automatyzacji procesów</div>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0px_24px_48px_rgba(25,28,30,0.06)] hover:bg-primary-fixed transition-all group mt-8">
+<div class="text-primary font-headline text-4xl font-extrabold mb-2" style="">15+</div>
+<div class="text-on-surface-variant group-hover:text-primary transition-colors" style="">Rynków globalnych</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-20">
+<span class="text-tertiary font-label text-sm font-bold tracking-widest uppercase mb-4 block" style="">NASZE USŁUGI</span>
+<h2 class="font-headline text-4xl md:text-5xl font-extrabold tracking-tight text-primary" style="">Inżynieria wzrostu</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Service Card 1 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl transition-all hover:scale-[1.02] hover:bg-primary-fixed group relative overflow-hidden">
+<div class="relative z-10">
+<span class="material-symbols-outlined text-4xl text-primary mb-6" style='font-variation-settings: "FILL" 1;'>hub</span>
+<h3 class="font-headline text-2xl font-bold mb-4 text-on-surface" style="">Sprzedaż Wielokanałowa (Omnichannel)</h3>
+<p class="text-on-surface-variant mb-8 text-lg" style="">
+                            Aktywna obecność i optymalizacja sprzedaży na kluczowych marketplace'ach. Zarządzaj ofertami na Amazon, Allegro, Zalando i innych z jednego miejsca.
+                        </p>
+<ul class="space-y-3">
+<li class="flex items-center gap-3 text-on-secondary-fixed-variant" style="">
+<span class="material-symbols-outlined text-sm" style="">check_circle</span>
+                                Synchronizacja stanów w czasie rzeczywistym
+                            </li>
+<li class="flex items-center gap-3 text-on-secondary-fixed-variant" style="">
+<span class="material-symbols-outlined text-sm" style="">check_circle</span>
+                                Optymalizacja listingu SEO
+                            </li>
+</ul>
+</div>
+</div>
+<!-- Service Card 2 -->
+<div class="bg-surface-container-lowest p-10 rounded-xl transition-all hover:scale-[1.02] hover:bg-primary-fixed group relative overflow-hidden">
+<div class="relative z-10">
+<span class="material-symbols-outlined text-4xl text-primary mb-6" style='font-variation-settings: "FILL" 1;'>precision_manufacturing</span>
+<h3 class="font-headline text-2xl font-bold mb-4 text-on-surface" style="">Automatyzacja Procesów</h3>
+<p class="text-on-surface-variant mb-8 text-lg" style="">
+                            Wykorzystaj AI do obsługi klienta, logistyki i finansów. Skup się na strategii, podczas gdy nasze algorytmy zajmą się powtarzalnymi zadaniami.
+                        </p>
+<ul class="space-y-3">
+<li class="flex items-center gap-3 text-on-secondary-fixed-variant" style="">
+<span class="material-symbols-outlined text-sm" style="">check_circle</span>
+                                Automatyczne fakturowanie i rozliczenia
+                            </li>
+<li class="flex items-center gap-3 text-on-secondary-fixed-variant" style="">
+<span class="material-symbols-outlined text-sm" style="">check_circle</span>
+                                Inteligentne zarządzanie magazynem
+                            </li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Global Reach Section Updated -->
+<section class="py-32 bg-white">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-16">
+<h2 class="font-headline text-4xl font-extrabold text-primary mb-6" style="">Zasięg Globalny</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed max-w-3xl" style="">
+                    Nasz ekosystem integruje się z największymi platformami sprzedażowymi na świecie, otwierając przed Twoim biznesem drzwi do milionów nowych klientów.
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="global-reach-grid">
+<!-- Region Card -->
+<div class="p-6 bg-surface-container-low rounded-xl border border-outline-variant/30 hover:border-primary/30 transition-colors">
+<h3 class="font-bold text-primary mb-3 flex items-center gap-2" style="">CZECHY</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-white text-xs font-semibold rounded-lg border border-outline-variant/50" style="">Alza.cz</span>
+<span class="px-3 py-1 bg-white text-xs font-semibold rounded-lg border border-outline-variant/50" style="">Allegro</span>
+<span class="px-3 py-1 bg-white text-xs font-semibold rounded-lg border border-outline-variant/50" style="">Kaufland</span>
+</div>
+</div>
+<div class="p-6 bg-surface-container-low rounded-xl border border-outline-variant/30 hover:border-primary/30 transition-colors">
+<h3 class="font-bold text-primary mb-3 flex items-center gap-2" style="">SŁOWACJA</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-white text-xs font-semibold rounded-lg border border-outline-variant/50" style="">Alza.sk</span>
+<span class="px-3 py-1 bg-white text-xs font-semibold rounded-lg border border-outline-variant/50" style="">Mall.sk</span>
+<span class="px-3 py-1 bg-white text-xs font-semibold rounded-lg border border-outline-variant/50" style="">Allegro</span>
+<span class="px-3 py-1 bg-white text-xs font-semibold rounded-lg border border-outline-variant/50" style="">Kaufland</span>
+</div>
+</div>
+<div class="p-6 bg-surface-container-low rounded-xl border border-outline-variant/30 hover:border-primary/30 transition-colors">
+<h3 class="font-bold text-primary mb-3 flex items-center gap-2" style="">WĘGRY</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-white text-xs font-semibold rounded-lg border border-outline-variant/50" style="">eMag</span>
+</div>
+</div>
+<div class="p-6 bg-surface-container-low rounded-xl border border-outline-variant/30 hover:border-primary/30 transition-colors">
+<h3 class="font-bold text-primary mb-3 flex items-center gap-2" style="">SŁOWENIA</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-white text-xs font-semibold rounded-lg border border-outline-variant/50" style="">Mimovrste</span>
+<span class="px-3 py-1 bg-white text-xs font-semibold rounded-lg border border-outline-variant/50" style="">Bigbang</span>
+</div>
+</div>
+<div class="p-6 bg-surface-container-low rounded-xl border border-outline-variant/30 hover:border-primary/30 transition-colors">
+<h3 class="font-bold text-primary mb-3 flex items-center gap-2 text-xs" style="">LITWA, ŁOTWA, ESTONIA</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-white text-xs font-semibold rounded-lg border border-outline-variant/50" style="">Pigu</span>
+</div>
+</div>
+<div class="p-6 bg-surface-container-low rounded-xl border border-outline-variant/30 hover:border-primary/30 transition-colors">
+<h3 class="font-bold text-primary mb-3 flex items-center gap-2" style="">FINLANDIA</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-white text-xs font-semibold rounded-lg border border-outline-variant/50" style="">Pigu</span>
+<span class="px-3 py-1 bg-white text-xs font-semibold rounded-lg border border-outline-variant/50" style="">CDON</span>
+</div>
+</div>
+<div class="p-6 bg-surface-container-low rounded-xl border border-outline-variant/30 hover:border-primary/30 transition-colors">
+<h3 class="font-bold text-primary mb-3 flex items-center gap-2" style="">SZWECJA, DANIA</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-white text-xs font-semibold rounded-lg border border-outline-variant/50" style="">CDON</span>
+</div>
+</div>
+<div class="p-6 bg-surface-container-low rounded-xl border border-outline-variant/30 hover:border-primary/30 transition-colors">
+<h3 class="font-bold text-primary mb-3 flex items-center gap-2" style="">HOLANDIA</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-white text-xs font-semibold rounded-lg border border-outline-variant/50" style="">Zalando</span>
+<span class="px-3 py-1 bg-white text-xs font-semibold rounded-lg border border-outline-variant/50" style="">BOL</span>
+<span class="px-3 py-1 bg-white text-xs font-semibold rounded-lg border border-outline-variant/50" style="">Amazon</span>
+<span class="px-3 py-1 bg-white text-xs font-semibold rounded-lg border border-outline-variant/50" style="">Vente-Unique</span>
+</div>
+</div>
+<div class="p-6 bg-surface-container-low rounded-xl border border-outline-variant/30 hover:border-primary/30 transition-colors">
+<h3 class="font-bold text-primary mb-3 flex items-center gap-2" style="">BELGIA</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-white text-xs font-semibold rounded-lg border border-outline-variant/50" style="">BOL</span>
+<span class="px-3 py-1 bg-white text-xs font-semibold rounded-lg border border-outline-variant/50" style="">Amazon</span>
+<span class="px-3 py-1 bg-white text-xs font-semibold rounded-lg border border-outline-variant/50" style="">Vente-Unique</span>
+</div>
+</div>
+<div class="p-6 bg-surface-container-low rounded-xl border border-outline-variant/30 hover:border-primary/30 transition-colors">
+<h3 class="font-bold text-primary mb-3 flex items-center gap-2" style="">FRANCJA</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-white text-xs font-semibold rounded-lg border border-outline-variant/50" style="">Leroy Merlin</span>
+<span class="px-3 py-1 bg-white text-xs font-semibold rounded-lg border border-outline-variant/50" style="">Cdiscount</span>
+<span class="px-3 py-1 bg-white text-xs font-semibold rounded-lg border border-outline-variant/50" style="">ManoMano</span>
+<span class="px-3 py-1 bg-white text-xs font-semibold rounded-lg border border-outline-variant/50" style="">Amazon</span>
+<span class="px-3 py-1 bg-white text-xs font-semibold rounded-lg border border-outline-variant/50" style="">RUE</span>
+<span class="px-3 py-1 bg-white text-xs font-semibold rounded-lg border border-outline-variant/50" style="">Vente-Unique</span>
+</div>
+</div>
+<div class="p-6 bg-surface-container-low rounded-xl border border-outline-variant/30 hover:border-primary/30 transition-colors">
+<h3 class="font-bold text-primary mb-3 flex items-center gap-2" style="">NIEMCY</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-white text-xs font-semibold rounded-lg border border-outline-variant/50" style="">Kaufland</span>
+<span class="px-3 py-1 bg-white text-xs font-semibold rounded-lg border border-outline-variant/50" style="">Zalando</span>
+<span class="px-3 py-1 bg-white text-xs font-semibold rounded-lg border border-outline-variant/50" style="">ManoMano</span>
+<span class="px-3 py-1 bg-white text-xs font-semibold rounded-lg border border-outline-variant/50" style="">Amazon</span>
+<span class="px-3 py-1 bg-white text-xs font-semibold rounded-lg border border-outline-variant/50" style="">XXXLUTZ</span>
+<span class="px-3 py-1 bg-white text-xs font-semibold rounded-lg border border-outline-variant/50" style="">Vente-Unique</span>
+</div>
+</div>
+<div class="p-6 bg-surface-container-low rounded-xl border border-outline-variant/30 hover:border-primary/30 transition-colors">
+<h3 class="font-bold text-primary mb-3 flex items-center gap-2" style="">WŁOCHY</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-white text-xs font-semibold rounded-lg border border-outline-variant/50" style="">ManoMano</span>
+<span class="px-3 py-1 bg-white text-xs font-semibold rounded-lg border border-outline-variant/50" style="">Amazon</span>
+<span class="px-3 py-1 bg-white text-xs font-semibold rounded-lg border border-outline-variant/50" style="">Vente-Unique</span>
+</div>
+</div>
+<div class="p-6 bg-surface-container-low rounded-xl border border-outline-variant/30 hover:border-primary/30 transition-colors">
+<h3 class="font-bold text-primary mb-3 flex items-center gap-2" style="">RUMUNIA</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-white text-xs font-semibold rounded-lg border border-outline-variant/50" style="">Altex</span>
+<span class="px-3 py-1 bg-white text-xs font-semibold rounded-lg border border-outline-variant/50" style="">eMag</span>
+<span class="px-3 py-1 bg-white text-xs font-semibold rounded-lg border border-outline-variant/50" style="">Skroutz</span>
+</div>
+</div>
+<div class="p-6 bg-surface-container-low rounded-xl border border-outline-variant/30 hover:border-primary/30 transition-colors">
+<h3 class="font-bold text-primary mb-3 flex items-center gap-2" style="">GRECJA</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-white text-xs font-semibold rounded-lg border border-outline-variant/50" style="">Skroutz</span>
+</div>
+</div>
+<div class="p-6 bg-surface-container-low rounded-xl border border-outline-variant/30 hover:border-primary/30 transition-colors">
+<h3 class="font-bold text-primary mb-3 flex items-center gap-2" style="">HISZPANIA</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-white text-xs font-semibold rounded-lg border border-outline-variant/50" style="">Amazon</span>
+</div>
+</div>
+<div class="p-6 bg-primary/5 rounded-xl border border-primary/20 hover:border-primary/40 transition-colors">
+<h3 class="font-bold text-primary mb-3 flex items-center gap-2" style="">CAŁA EU</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-primary text-white text-xs font-semibold rounded-lg" style="">ALIEXPRESS</span>
+<span class="px-3 py-1 bg-primary text-white text-xs font-semibold rounded-lg" style="">Temu</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Form -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-4xl mx-auto px-8">
+<div class="bg-surface-container-lowest p-12 rounded-xl shadow-[0px_24px_48px_rgba(25,28,30,0.06)]">
+<div class="text-center mb-12">
+<h2 class="font-headline text-3xl font-extrabold text-primary mb-4" style="">Skontaktuj się z nami</h2>
+<p class="text-on-surface-variant" style="">Porozmawiajmy o automatyzacji Twojego biznesu.</p>
+</div>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block text-sm font-medium text-on-surface mb-2" style="">Imię i Nazwisko</label>
+<input class="w-full bg-surface-container-highest border-none rounded-xl p-4 focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all" placeholder="Jan Kowalski" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-on-surface mb-2" style="">Email</label>
+<input class="w-full bg-surface-container-highest border-none rounded-xl p-4 focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all" placeholder="jan@firma.pl" type="email"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-on-surface mb-2" style="">Wiadomość</label>
+<textarea class="w-full bg-surface-container-highest border-none rounded-xl p-4 focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all" placeholder="Jak możemy Ci pomóc?" rows="4"></textarea>
+</div>
+<button class="w-full bg-gradient-to-br from-primary to-primary-container text-white py-4 rounded-xl font-bold text-lg shadow-lg hover:opacity-90 transition-opacity" style="" type="submit">
+                        Wyślij wiadomość
+                    </button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 py-12">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="col-span-1 md:col-span-1">
+<div class="text-xl font-bold text-blue-900 mb-4" style="">Algorithmic Architect</div>
+<p class="text-slate-500 font-inter text-sm leading-relaxed" style="">
+                Profesjonalne systemy automatyzacji dla globalnego handlu elektronicznego.
+            </p>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-bold text-slate-800 text-sm mb-2" style="">Firma</h4>
+<a class="text-slate-500 hover:text-blue-600 transition-colors text-sm" href="#" style="">About Us</a>
+<a class="text-slate-500 hover:text-blue-600 transition-colors text-sm" href="#" style="">Case Studies</a>
+<a class="text-slate-500 hover:text-blue-600 transition-colors text-sm" href="#" style="">Contact</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-bold text-slate-800 text-sm mb-2" style="">Legal</h4>
+<a class="text-slate-500 hover:text-blue-600 transition-colors text-sm" href="#" style="">Privacy Policy</a>
+<a class="text-slate-500 hover:text-blue-600 transition-colors text-sm" href="#" style="">Terms of Service</a>
+<a class="text-slate-500 hover:text-blue-600 transition-colors text-sm" href="#" style="">Cookie Settings</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="font-bold text-slate-800 text-sm mb-2" style="">Social</h4>
+<a class="text-slate-500 hover:text-blue-600 transition-colors text-sm" href="#" style="">LinkedIn</a>
+<a class="text-slate-500 hover:text-blue-600 transition-colors text-sm" href="#" style="">Twitter</a>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 mt-12 pt-8 border-t border-slate-200">
+<p class="text-slate-400 text-sm" style="">© 2024 Algorithmic Architect. All rights reserved.</p>
+</div>
+</footer>
+</body></html>
